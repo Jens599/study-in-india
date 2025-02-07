@@ -16,5 +16,5 @@
 
 html,
 body {
-  @apply font-poppins bg-white outline-2 outline-accent-red;
+  @apply font-poppins outline-accent-red bg-white outline-2;
 }

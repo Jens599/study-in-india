@@ -6,6 +6,8 @@ import Testimonials01 from "../assets/Testimonials 01.svg";
 import Testimonials02 from "../assets/Testimonials 02.svg";
 import Testimonials03 from "../assets/Testimonials 03.svg";
 import { RiDoubleQuotesL } from "react-icons/ri";
+import FormImage from "../assets/FormImage.png";
+import BookingForm from "../components/BookingForm";
 
 const Home = () => {
   return (
@@ -156,23 +158,29 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="">
-        <div className="">
-          <h1 className="">
+      <div className="my-16 flex flex-col items-center justify-center gap-16">
+        <div className="flex w-full flex-col items-center">
+          <h1 className="text-4xl font-black">
             Study in{" "}
             <span className="text-primary-green">
               In<span className="text-accent-red">d</span>ia
-            </span>
+            </span>{" "}
             free Assessment
           </h1>
-          <span className="">
+          <span className="text-text-gray w-[38ch] text-center text-xl">
             Fill in your details below to get a personalised advice
           </span>
+          <div className="bg-accent-red h-1 w-20"></div>
         </div>
-        <div className="">
-          <div className=""></div>
 
-          <div className=""></div>
+        <div className="container mx-auto flex overflow-hidden rounded-lg bg-neutral-200">
+          <div className="w-full md:w-1/2">
+            <img src={FormImage} className="h-full w-full object-cover" />
+          </div>
+
+          <div className="w-full p-6 md:w-1/2">
+            <BookingForm />
+          </div>
         </div>
       </div>
     </>
