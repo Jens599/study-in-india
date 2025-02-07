@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-primary-blue: rgb(0 123 197);
+  --color-background-gray: rgb(241 241 241);
+  --color-primary-green: rgb(4 66 33);
+  --color-accent-yellow: rgb(254, 206, 0);
+  --color-accent-red: rgb(234, 65, 66);
+  --color-text-gray: rgb(89, 88, 88);
+
+  --font-poppins: "Poppins", system-ui;
+  --font-open-sans-hebrew: "Open Sans", system-ui;
+}
+
+html,
+body {
+  @apply font-poppins bg-white outline-2 outline-accent-red;
+}
