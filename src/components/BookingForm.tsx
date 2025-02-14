@@ -46,8 +46,6 @@ const BookingForm = () => {
     console.log(data);
   };
 
-  console.log(watch("university"));
-
   return (
     <form
       className="mx-9 flex h-full flex-col justify-evenly gap-4 font-black"
@@ -126,9 +124,16 @@ const BookingForm = () => {
             <option value="-1" hidden>
               Preferred University*
             </option>
-            <option value="university1">University 1</option>
-            <option value="university2">University 2</option>
-            <option value="university3">University 3</option>
+            <option value="iit-delhi">IIT Delhi</option>
+            <option value="iit-bombay">IIT Bombay</option>
+            <option value="iit-madras">IIT Madras</option>
+            <option value="delhi-university">Delhi University</option>
+            <option value="jnu">Jawaharlal Nehru University</option>
+            <option value="bits-pilani">BITS Pilani</option>
+            <option value="manipal">Manipal University</option>
+            <option value="vit">VIT University</option>
+            <option value="anna-university">Anna University</option>
+            <option value="jadavpur-university">Jadavpur University</option>
           </select>
           {errors.university && (
             <p className="mt-1 text-xs text-red-500">
@@ -149,10 +154,22 @@ const BookingForm = () => {
             <option value="-1" hidden>
               What do you plan to study?*
             </option>
-            <option value="engineering">Engineering</option>
-            <option value="medicine">Medicine</option>
-            <option value="business">Business</option>
-            <option value="arts">Arts</option>
+            <option value="computer-science">
+              Computer Science & Engineering
+            </option>
+            <option value="mechanical">Mechanical Engineering</option>
+            <option value="electrical">Electrical Engineering</option>
+            <option value="civil">Civil Engineering</option>
+            <option value="medicine">Medicine (MBBS)</option>
+            <option value="dental">Dental (BDS)</option>
+            <option value="business">Business Administration (BBA/MBA)</option>
+            <option value="commerce">Commerce</option>
+            <option value="arts-humanities">Arts & Humanities</option>
+            <option value="law">Law</option>
+            <option value="architecture">Architecture</option>
+            <option value="pharmacy">Pharmacy</option>
+            <option value="biotechnology">Biotechnology</option>
+            <option value="design">Design</option>
           </select>
           {errors.planToStudy && (
             <p className="mt-1 text-xs text-red-500">
@@ -224,9 +241,11 @@ const BookingForm = () => {
             <option value="-1" hidden>
               Preferred Study Level*
             </option>
-            <option value="undergraduate">Undergraduate</option>
-            <option value="postgraduate">Postgraduate</option>
-            <option value="phd">PhD</option>
+            <option value="undergraduate">Undergraduate (Bachelor's)</option>
+            <option value="postgraduate">Postgraduate (Master's)</option>
+            <option value="phd">PhD/Doctoral Studies</option>
+            <option value="diploma">Diploma</option>
+            <option value="certificate">Certificate Course</option>
           </select>
           {errors.preferredStudyLevel && (
             <p className="mt-1 text-xs text-red-500">

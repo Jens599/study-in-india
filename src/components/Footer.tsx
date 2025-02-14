@@ -6,7 +6,7 @@ import { FooterData as links } from "../data/data";
 const Footer = () => {
   return (
     <footer className="flex flex-col justify-between">
-      <div className="flex flex-col items-center justify-around gap-16 bg-black pt-14 pb-28 xl:flex-row xl:justify-between xl:px-52">
+      <div className="flex flex-col items-center justify-around gap-16 bg-black pt-14 pb-28 xl:flex-row xl:items-start xl:justify-between xl:px-52">
         <div className="flex flex-col gap-10">
           <img src={logo} alt="logo" className="" />
           <div className="flex gap-2">
@@ -39,7 +39,7 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className="bg-primary-green flex flex-col xl:flex-row items-center justify-between py-5 text-white xl:flex-row xl:px-52">
+      <div className="bg-primary-green flex flex-col items-center justify-between py-5 text-white xl:flex-row xl:px-52">
         <span>Copyright © 2024 Study In India</span>
         <div className="flex gap-1">
           <span>Disclaimer</span>

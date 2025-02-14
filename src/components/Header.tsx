@@ -5,10 +5,13 @@ import { RiMenu2Line, RiMenuFill } from "react-icons/ri";
 import { twMerge } from "tailwind-merge";
 
 const Header = () => {
-  const [hbmenu, setHbmenu] = useState<boolean>(false);
+  const [hbmenu, setHbmenu] = useState<boolean>(true);
   const toggleHbMenu = () => {
     setHbmenu(!hbmenu);
   };
+
+  const color = window.location.pathname === "/home" ? "blue" : "green";
+
   return (
     <header className="flex flex-col items-center justify-between xl:my-5 xl:mr-20 xl:ml-28 xl:flex-row">
       <img
@@ -52,7 +55,10 @@ const Header = () => {
 
         <NavLink
           to="/applyNow"
-          className="bg-primary-blue mb-4 rounded-xl px-3 py-3.5 text-center text-nowrap text-white xl:mb-0"
+          className={twMerge(
+            "bg-primary-blue mb-4 rounded-xl px-3 py-3.5 text-center text-nowrap text-white xl:mb-0",
+            color === "blue" ? "bg-primary-blue" : "bg-primary-green",
+          )}
         >
           Apply Now
         </NavLink>

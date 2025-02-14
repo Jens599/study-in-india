@@ -6,3 +6,5 @@ export { default as Carousel } from "./Carousel";
 export { default as Card } from "./Card";
 export { default as NewsAndUpdates } from "./NewsAndUpdates";
 export { default as BookingForm } from "./BookingForm";
+export { default as Chips } from "./Chips";
+export { default as CoursesSection } from "./CoursesSection";

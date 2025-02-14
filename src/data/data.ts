@@ -1,3 +1,5 @@
+import course from "../assets/Campus.jpeg";
+
 export const carouselItems = [
   {
     id: 1,
@@ -92,5 +94,108 @@ export const FooterData = [
       { title: "Talk to Counsellors", path: "#" },
       { title: "Contact Us", path: "#" },
     ],
+  },
+];
+
+export const sampleTags = ["Tag 1", "Tag 2", "Tag 3", "Tag 4", "Tag 5"];
+
+export const courseData = [
+  {
+    id: 1,
+    name: "B.Tech Computer Science",
+    image: course,
+    link: "See Course Guide",
+  },
+  {
+    id: 2,
+    name: "MBBS",
+    image: course,
+    link: "See Course Guide",
+  },
+  {
+    id: 3,
+    name: "BBA",
+    image: course,
+    link: "See Course Guide",
+  },
+  {
+    id: 4,
+    name: "B.Arch",
+    image: course,
+    link: "See Course Guide",
+  },
+  {
+    id: 5,
+    name: "B.Des",
+    image: course,
+    link: "See Course Guide",
+  },
+  {
+    id: 6,
+    name: "LLB",
+    image: course,
+    link: "See Course Guide",
+  },
+  {
+    id: 7,
+    name: "B.Pharm",
+    image: course,
+    link: "See Course Guide",
+  },
+  {
+    id: 8,
+    name: "BSc Nursing",
+    image: course,
+    link: "See Course Guide",
+  },
+  {
+    id: 9,
+    name: "BCA",
+    image: course,
+    link: "See Course Guide",
+  },
+  {
+    id: 10,
+    name: "B.Com",
+    image: course,
+    link: "See Course Guide",
+  },
+];
+
+export const demoData = [
+  {
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
+    title: "New Campus Opening in Downtown Toronto",
+    description:
+      "Join us for the grand opening of our state-of-the-art facility in the heart of Toronto",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
+    title: "Fall 2024 Applications Now Open",
+    description:
+      "Start your journey with us - applications for Fall 2024 semester are now being accepted",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
+    title: "Student Success Story: Sarah Chen",
+    description:
+      "Read how our graduate Sarah landed her dream job at a leading tech company",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
+    title: "New Partnership with Industry Leaders",
+    description:
+      "We're excited to announce new partnerships providing expanded opportunities for students",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
+    title: "Upcoming Career Fair",
+    description:
+      "Connect with top employers at our annual career fair next month",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
+    title: "Scholarship Program Launch",
+    description: "New merit-based scholarships available for incoming students",
   },
 ];

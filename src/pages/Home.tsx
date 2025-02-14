@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Carousel, Hero, NewsAndUpdates } from "../components";
+import { Carousel, CoursesSection, Hero, NewsAndUpdates } from "../components";
 import campusImage from "../assets/Campus.jpeg";
 import { carouselItems } from "../data/data";
 import Testimonials01 from "../assets/Testimonials 01.svg";
@@ -15,12 +15,12 @@ const Home = () => {
       <Hero />
 
       <div className="my-11 flex flex-col items-center justify-center gap-4">
-        <h1 className="text-primary-green text-4xl font-black">
+        <h1 className="text-primary-green text-center text-4xl font-black">
           About Study in In<span className="text-accent-red">d</span>ia
         </h1>
         <div className="mx-20 my-10 flex flex-col items-center justify-between gap-20 text-justify xl:flex-row">
           <div className="flex flex-col gap-4">
-            <span className="text-lg/normal xl:w-[711px]">
+            <span className="line-clamp-6 text-lg/normal xl:line-clamp-none xl:w-[711px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -66,7 +66,9 @@ const Home = () => {
           className="my-16 flex flex-col items-center justify-center gap-5"
           id="Testimonials"
         >
-          <h1 className="text-4xl font-bold">What Student Say About Us?</h1>
+          <h1 className="text-center text-4xl font-bold">
+            What Student Say About Us?
+          </h1>
           <div className="bg-accent-red h-1 w-20"></div>
           <div className="my-16 flex w-full flex-col items-center justify-between gap-16 xl:flex-row xl:gap-4 xl:px-[382px]">
             {/* Left testimonial card */}
@@ -100,7 +102,7 @@ const Home = () => {
             </div>
 
             {/* Center testimonial card - larger size */}
-            <div className="relative isolate flex h-[466px] w-[434px] translate-y-7 flex-col items-center xl:translate-y-0">
+            <div className="relative isolate flex h-[466px] w-[380px] translate-y-7 flex-col items-center xl:w-[434px] xl:translate-y-0">
               {/* Profile image */}
               <div className="size-24 -translate-y-7 overflow-hidden rounded-full bg-black">
                 <img
@@ -160,21 +162,21 @@ const Home = () => {
 
       <div className="my-16 flex flex-col items-center justify-center gap-16">
         <div className="flex w-full flex-col items-center">
-          <h1 className="text-4xl font-black">
+          <h1 className="text-center text-4xl font-black">
             Study in{" "}
             <span className="text-primary-green">
               In<span className="text-accent-red">d</span>ia
             </span>{" "}
             free Assessment
           </h1>
-          <span className="text-text-gray w-[38ch] text-center text-xl">
+          <span className="text-text-gray text-center text-xl xl:w-[38ch]">
             Fill in your details below to get a personalised advice
           </span>
           <div className="bg-accent-red h-1 w-20"></div>
         </div>
 
         <div className="container mx-auto flex overflow-hidden rounded-lg bg-neutral-200">
-          <div className="w-full md:w-1/2">
+          <div className="hidden w-full md:block md:w-1/2">
             <img src={FormImage} className="h-full w-full object-cover" />
           </div>
 
@@ -182,6 +184,10 @@ const Home = () => {
             <BookingForm />
           </div>
         </div>
+      </div>
+
+      <div className="flex flex-col items-center justify-center bg-neutral-200 py-8">
+        <CoursesSection />
       </div>
     </>
   );

@@ -6,11 +6,11 @@ const Hero = () => {
   return (
     <>
       <div className="relative flex w-full items-center xl:h-[536px]">
-        <div className="bg-accent-yellow/15 h-xs z-10 flex w-3xl flex-col gap-4 rounded-3xl pt-7 pr-16 pb-14 pl-12 xl:ml-64">
+        <div className="bg-accent-yellow/15 z-10 flex w-3xl flex-col gap-4 rounded-3xl pt-7 pr-16 pb-14 pl-12 xl:ml-64">
           <h1 className="text-accent-red text-5xl/tight font-black">
             Begin your Education in India : Study In India
           </h1>
-          <span className="w-[40ch] text-xl/normal font-black">
+          <span className="text-xl/normal font-black xl:w-[40ch]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </span>

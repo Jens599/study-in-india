@@ -12,14 +12,16 @@ interface CardProps {
 
 const Card = ({ date, image, title, description, link }: CardProps) => {
   return (
-    <div className="w-[409px]">
+    <div className="max-w-[409px]">
       <img src={image} />
-      <div className="flex flex-col gap-2 leading-1.5 font-black">
+      <div className="flex flex-col gap-2 font-black">
         {date && <span className="text-text-gray mt-4 text-lg">{date}</span>}
-        <span className="max-w-[25ch] text-2xl">{title}</span>
+        <span className="xl:max-w-[25ch] xl:text-2xl">{title}</span>
 
         {description && (
-          <span className="text-text-gray text-lg">{description}</span>
+          <span className="text-text-gray text-sm xl:text-lg">
+            {description}
+          </span>
         )}
 
         {link && (

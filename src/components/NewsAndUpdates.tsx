@@ -10,7 +10,7 @@ const NewsAndUpdates = () => {
           Let's help you live your <br /> dream
         </span>
       </div>
-      <div className="mt-14 flex justify-between gap-4 xl:gap-0">
+      <div className="mt-14 grid justify-center gap-4 lg:grid-cols-2 xl:grid-cols-3 xl:gap-0">
         {cardItems.map((item) => (
           <Card
             date={item.date}
