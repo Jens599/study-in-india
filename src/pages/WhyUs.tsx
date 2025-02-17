@@ -1,25 +1,10 @@
-import { Card, NewsAndUpdates } from "../components";
+import { Card, HeroBanner, NewsAndUpdates } from "../components";
 import WhyUsImage from "../assets/whyUsBanner.jpg";
 import { demoData } from "../data/data";
 const WhyUs = () => {
   return (
     <>
-      <div className="relative isolate grid justify-around bg-blue-100 xl:grid-cols-2">
-        <div className="flex flex-col gap-4 p-24 py-24 xl:px-[315px]">
-          <h1 className="text-[2.375rem] font-black">Why Us?</h1>
-          <p className="text-sm font-black lg:text-lg/normal xl:w-[36ch]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <img
-          src={WhyUsImage}
-          alt="Why Us"
-          className="absolute -z-10 hidden size-full object-cover lg:block"
-        />
-      </div>
+      <HeroBanner title="Why Us?" image={WhyUsImage} />
 
       <div className="my-12 flex flex-col justify-center space-y-12">
         <div className="flex flex-col items-center justify-center gap-4">

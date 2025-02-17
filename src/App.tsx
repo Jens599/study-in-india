@@ -6,7 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import { RootLayout } from "./layouts";
-import { ContactUs, Home, NotFound, WhyUs } from "./pages";
+import { ContactUs, Home, NotFound, Scholarship, WhyUs } from "./pages";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -16,7 +16,7 @@ const routes = createBrowserRouter(
         <Route path="/home" element={<Home />} />
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/whyUs" element={<WhyUs />} />
-        <Route path="/" element={<WhyUs />} />
+        <Route path="/scholarship" element={<Scholarship />} />
       </Route>
       <Route path="*" element={<NotFound />} />,
     </Route>,

@@ -8,3 +8,4 @@ export { default as NewsAndUpdates } from "./NewsAndUpdates";
 export { default as BookingForm } from "./BookingForm";
 export { default as Chips } from "./Chips";
 export { default as CoursesSection } from "./CoursesSection";
+export { default as HeroBanner } from "./HeroBanner";

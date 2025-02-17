@@ -9,6 +9,8 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 import FormImage from "../assets/FormImage.png";
 import BookingForm from "../components/BookingForm";
 
+
+
 const Home = () => {
   return (
     <>
