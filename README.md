@@ -1,50 +1,117 @@
-# React + TypeScript + Vite
+# Study in India Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+A React-based website designed to help international students explore educational opportunities in India. The platform provides comprehensive information about colleges, courses, scholarships, and the application process.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+### 1. Navigation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Responsive header with mobile-friendly hamburger menu
+- Top banner with quick access to news and contact information
+- Main navigation includes:
+  - Colleges/Universities
+  - Courses
+  - Why Us
+  - Scholarship
+  - Blogs
+  - Apply Now button
 
-- Configure the top-level `parserOptions` property like this:
+### 2. Key Sections
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+#### Home Page
+
+- Hero section with call-to-action
+- About Study in India
+- Institution carousel
+- News and updates
+- Student testimonials
+- Free assessment form
+
+#### Courses
+
+- Comprehensive course search
+- Course categories including:
+  - Engineering
+  - Medical
+  - Business
+  - Architecture
+  - Design
+  - Law
+- Interactive course filtering system
+
+#### Scholarship Information
+
+- Student Free Ship details
+- Stipend information
+- Merit-based scholarships
+- Educational funding options
+
+## Technology Stack
+
+- **Frontend Framework**: React with TypeScript
+- **Routing**: React Router v7
+- **Styling**: Tailwind CSS
+- **Form Handling**: React Hook Form with Zod validation
+- **Build Tool**: Vite
+- **Package Manager**: pnpm
+
+## Project Structure
+
+```bash
+src/
+├── assets/         # Images and static assets
+├── components/     # Reusable UI components
+├── layouts/        # Layout components
+├── pages/         # Page components
+├── data/          # Static data and configurations
+└── main.tsx       # Application entry point
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Getting Started
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository
+2. Install dependencies:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+pnpm install
 ```
+
+3. Start development server:
+
+```bash
+pnpm dev
+```
+
+4. Build for production:
+
+```bash
+pnpm build
+```
+
+## Development Guidelines
+
+### Code Style
+
+- TypeScript for type safety
+- ESLint for code linting
+- Prettier for code formatting
+
+### Component Structure
+
+- Functional components with TypeScript interfaces
+- Custom hooks for shared logic
+- Tailwind CSS for styling
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit changes
+4. Push to the branch
+5. Open a pull request
+
+---
+
+Note: This project is currently in development. Some features may be incomplete or subject to change.
