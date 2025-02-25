@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { useState } from "react";
 import { RiMenu2Line, RiMenuFill } from "react-icons/ri";
@@ -10,6 +10,8 @@ const Header = () => {
     setHbmenu(!hbmenu);
   };
 
+  const nav = useNavigate();
+
   const color = window.location.pathname === "/home" ? "blue" : "green";
 
   return (
@@ -18,6 +20,7 @@ const Header = () => {
         src={logo}
         className="max-h-32 object-cover"
         alt="Study in India Logo"
+        onClick={() => nav("/home")}
       />
       <button
         className="my-4 flex h-full w-full items-center justify-center xl:hidden"

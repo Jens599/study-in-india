@@ -6,7 +6,16 @@ import {
   Navigate,
 } from "react-router-dom";
 import { RootLayout } from "./layouts";
-import { ContactUs, Home, NotFound, Scholarship, WhyUs } from "./pages";
+import {
+  Blogs,
+  CollegesUniversities,
+  ContactUs,
+  Courses,
+  Home,
+  NotFound,
+  Scholarship,
+  WhyUs,
+} from "./pages";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +26,12 @@ const routes = createBrowserRouter(
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/whyUs" element={<WhyUs />} />
         <Route path="/scholarship" element={<Scholarship />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route
+          path="/collegesUniversities"
+          element={<CollegesUniversities />}
+        />
       </Route>
       <Route path="*" element={<NotFound />} />,
     </Route>,

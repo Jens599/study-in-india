@@ -1,15 +1,15 @@
 import { NavLink } from "react-router-dom";
 import { Carousel, CoursesSection, Hero, NewsAndUpdates } from "../components";
-import campusImage from "../assets/Campus.jpeg";
 import { carouselItems } from "../data/data";
-import Testimonials01 from "../assets/Testimonials 01.svg";
-import Testimonials02 from "../assets/Testimonials 02.svg";
-import Testimonials03 from "../assets/Testimonials 03.svg";
+import {
+  Testimonials01,
+  Testimonials02,
+  Testimonials03,
+  Campus as campusImage,
+  FormImage as FormImage,
+} from "../assets";
 import { RiDoubleQuotesL } from "react-icons/ri";
-import FormImage from "../assets/FormImage.png";
 import BookingForm from "../components/BookingForm";
-
-
 
 const Home = () => {
   return (
@@ -172,7 +172,7 @@ const Home = () => {
             free Assessment
           </h1>
           <span className="text-text-gray text-center text-xl xl:w-[38ch]">
-            Fill in your details below to get a personalised advice
+            Fill in your details below to get a personalized advice
           </span>
           <div className="bg-accent-red h-1 w-20"></div>
         </div>
