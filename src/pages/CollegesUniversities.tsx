@@ -91,8 +91,8 @@ const CollegesUniversities = () => {
           <div className="bg-accent-red h-1 w-20"></div>
         </div>
         <div className="grid w-full place-items-center gap-4 px-8 lg:grid-cols-2 xl:place-items-baseline xl:px-[315px] 2xl:grid-cols-3">
-          {courseData.slice(0, 6).map((course) => (
-            <div className="flex flex-col gap-5">
+          {courseData.slice(0, 6).map((course, index) => (
+            <div key={index} className="flex flex-col gap-5">
               <img
                 src={course.image}
                 alt=""
@@ -116,8 +116,8 @@ const CollegesUniversities = () => {
           <div className="bg-accent-red h-1 w-20"></div>
         </div>
         <div className="grid w-full place-items-center gap-4 px-8 lg:grid-cols-2 xl:place-items-baseline xl:px-[315px] 2xl:grid-cols-2">
-          {demoData.slice(0, 4).map((card) => (
-            <img src={card.image} alt="" />
+          {demoData.slice(0, 4).map((card, index) => (
+            <img key={index} src={card.image} alt="" />
           ))}
         </div>
       </div>

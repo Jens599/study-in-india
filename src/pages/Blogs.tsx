@@ -15,8 +15,8 @@ const Blogs = () => {
         </div>
 
         <div className="grid w-full place-items-center gap-8 px-8 lg:grid-cols-2 xl:place-items-baseline xl:px-[315px] 2xl:grid-cols-3">
-          {[...Array(6)].map(() => (
-            <div className="bg-primary-green/30 max-w-md">
+          {[...Array(6)].map((_, index) => (
+            <div key={index} className="bg-primary-green/30 max-w-md">
               <img
                 src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff"
                 className="object-cover"

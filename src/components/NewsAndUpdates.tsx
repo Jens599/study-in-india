@@ -11,8 +11,9 @@ const NewsAndUpdates = () => {
         </span>
       </div>
       <div className="mt-14 grid justify-center gap-4 lg:grid-cols-2 xl:grid-cols-3 xl:gap-0">
-        {cardItems.map((item) => (
+        {cardItems.map((item, index) => (
           <Card
+            key={index}
             date={item.date}
             image={item.image}
             title={item.title}

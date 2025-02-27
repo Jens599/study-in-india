@@ -25,6 +25,7 @@ const Courses = () => {
         <div className="grid w-full place-items-center gap-8 px-8 lg:grid-cols-2 xl:place-items-baseline xl:px-[315px] 2xl:grid-cols-3">
           {subjectData.map((data, index) => (
             <div
+              key={index}
               className={twMerge(
                 "flex size-full flex-col gap-4 p-12 font-black",
                 index % 2 == 0 ? "bg-primary-green/30" : "",
@@ -33,8 +34,8 @@ const Courses = () => {
               <h2 className="text-accent-red text-xl">{data.Course}</h2>
 
               <div className="flex flex-col gap-1">
-                {data.subjects.map((subs) => (
-                  <span>{subs}</span>
+                {data.subjects.map((subs, index) => (
+                  <span key={index}>{subs}</span>
                 ))}
               </div>
             </div>

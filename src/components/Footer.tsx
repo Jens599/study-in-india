@@ -8,31 +8,27 @@ const Footer = () => {
     <footer className="flex flex-col justify-between">
       <div className="flex flex-col items-center justify-around gap-16 bg-black pt-14 pb-28 xl:flex-row xl:items-start xl:justify-between xl:px-52">
         <div className="flex flex-col gap-10">
-          <img src={logo} alt="logo" className="" />
+          <img src={logo} alt="logo" />
           <div className="flex gap-2">
-            <NavLink to="#" className="">
+            <NavLink to="#">
               <FaFacebook />
             </NavLink>
-            <NavLink to="#" className="">
-              FA
-            </NavLink>
-            <NavLink to="#" className="">
-              FA
-            </NavLink>
-            <NavLink to="#" className="">
-              FA
-            </NavLink>
+            <NavLink to="#">FA</NavLink>
+            <NavLink to="#">FA</NavLink>
+            <NavLink to="#">FA</NavLink>
           </div>
         </div>
 
-        {links.map((link) => (
-          <div className="">
+        {links.map((link, index) => (
+          <div key={index} className="">
             <h1 className="mb-1.5 text-xl font-black text-white">
               {link.heading}
             </h1>
             <div className="text-text-gray flex flex-col gap-2 text-lg font-black">
-              {link.titles.map((title) => (
-                <NavLink to={title.path}>{title.title}</NavLink>
+              {link.titles.map((title, index) => (
+                <NavLink key={index} to={title.path}>
+                  {title.title}
+                </NavLink>
               ))}
             </div>
           </div>

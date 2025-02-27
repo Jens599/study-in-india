@@ -8,8 +8,8 @@ const CoursesSection = () => {
     <div className="container space-y-2 rounded-xl bg-white px-8 py-8">
       <CourseActionBar />
       <div className="mt-4 grid gap-4 xl:grid-cols-3">
-        {courseData.slice(0, 3).map((course) => (
-          <div className="flex flex-col gap-5">
+        {courseData.slice(0, 3).map((course, index) => (
+          <div key={index} className="flex flex-col gap-5">
             <img
               src={course.image}
               alt=""

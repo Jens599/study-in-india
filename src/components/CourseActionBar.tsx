@@ -4,10 +4,26 @@ import { Chips } from ".";
 
 const CourseActionBar = () => {
   const [tags, setTags] = useState<string[]>(sampleTags);
+  const [search, setSearch] = useState<string>("");
 
   const removeTag = (tag: string) => {
     setTags((prev) => prev.filter((t) => t !== tag));
   };
+
+  const searchHandler = () => {
+    if (search.trim()) {
+      setTags((prev) => [...prev, search.trim()]);
+      setSearch("");
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      searchHandler();
+    }
+  };
+
   return (
     <>
       <div className="grid font-bold xl:grid-cols-[0.25fr_2fr_0.5fr]">
@@ -34,6 +50,9 @@ const CourseActionBar = () => {
           id="search"
           placeholder="Search"
           className="w-full px-2 py-2 outline outline-gray-300"
+          onKeyDown={handleKeyDown}
+          onChange={(e) => setSearch(e.target.value)}
+          value={search}
         />
         <div className="hidden items-center gap-1 xl:flex">
           <button className="ml-1 h-full grow cursor-pointer outline outline-gray-300 hover:bg-gray-100">

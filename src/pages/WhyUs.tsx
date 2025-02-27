@@ -13,8 +13,9 @@ const WhyUs = () => {
           <div className="bg-accent-red h-1 w-20"></div>
         </div>
         <div className="grid w-full place-items-center gap-4 px-8 lg:grid-cols-2 xl:place-items-baseline xl:px-[315px] 2xl:grid-cols-3">
-          {demoData.map((card) => (
+          {demoData.map((card, index) => (
             <Card
+              key={index}
               image={card.image}
               title={card.title}
               description={card.description}
@@ -29,8 +30,8 @@ const WhyUs = () => {
           <div className="bg-accent-red h-1 w-20"></div>
         </div>
         <div className="grid w-full place-items-center gap-4 px-8 lg:grid-cols-2 xl:place-items-baseline xl:px-[315px] 2xl:grid-cols-3">
-          {demoData.map((card) => (
-            <img src={card.image} alt="" />
+          {demoData.map((card, index) => (
+            <img key={index} src={card.image} alt="" />
           ))}
         </div>
       </div>

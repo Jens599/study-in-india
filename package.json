@@ -1,5 +1,6 @@
 {
   "name": "study-in-india",
+  "homepage": "https://Jens599.github.io/study-in-india",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,6 +15,7 @@
   "dependencies": {
     "@hookform/resolvers": "^4.1.0",
     "@tailwindcss/vite": "^4.0.6",
+    "clsx": "^2.1.1",
     "dotenv": "^16.4.7",
     "gh-pages": "^6.3.0",
     "react": "^19.0.0",
